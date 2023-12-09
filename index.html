@@ -269,6 +269,12 @@
           Comparison on phantom data
         </h4>
       </div>
+      <div class="has-text-justified">
+        <p>
+          <i>In-vitro</i> results using the phantom data. The ground truth ultrasound <b>x</b> and haze signals <b>h</b> which are used to construct measurement <b>y</b> are shown on the left. RF-based dehazing results are on the right, for both the baseline methods (BM3D and NCSNv2) and the proposed diffusion method. For the latter, we show posterior solutions for both the ultrasound and haze signals (lower inset plot to the right). For all methods, we show error plots that highlight the difference between ground truth and dehazed images, with the proposed diffusion method notably dropping less signal.
+        </p>
+        <br>
+      </div>
       <!-- Comparison Image -->
       <div class="columns is-centered">
         <div class="column">
@@ -278,6 +284,12 @@
         </div>
       </div>
 
+      <div class="has-text-justified">
+        <p>
+          Flick through the images below to see the results on the phantom data. Notice how the proposed method is able to remove the haze while preserving the signal. The baselines either are unable to remove the haze or remove too much signal (see error plots).
+        </p>
+        <br>
+      </div>
       <ul class="nav nav-pills nav-justified" id="prompt-view-ul" style="width: 100%;margin-bottom: 0.5em;">
         <li style="font-size: 0.9em;" class="active"><a href="javascript: void(0);" onclick="ChangePrompt(0);">Image</a>
         </li>
