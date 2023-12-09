@@ -5,8 +5,8 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
   <!-- HTML Meta Tags -->
-  <title>Beyond First-Order Tweedie: Solving Inverse Problems using Latent Diffusion</title>
-  <meta name="description" content="Beyond First-Order Tweedie: Solving Inverse Problems using Latent Diffusion">
+  <title>Dehazing Ultrasound using Diffusion Models</title>
+  <meta name="description" content="Dehazing Ultrasound using Diffusion Models">
 
   <!-- Facebook Meta Tags -->
   <meta property="og:url" content="https://dehazing-diffusion.github.io/">
@@ -43,7 +43,7 @@
   <link rel="stylesheet" href="./assets/css/tab_gallery.css">
   <!-- <link rel="stylesheet" href="./assets/css/fontawesome.all.min.css"> -->
   <link rel="stylesheet" href="./assets/css/academicons.min.css">
-  <link rel="stylesheet" href="./assets/css/index.css">
+<link rel="stylesheet" href="./assets/css/index.css">
   <link rel="stylesheet" href="./assets/css/juxtapose.css">
   <link rel="stylesheet" href="./assets/css/image_card_fader.css">
   <link rel="stylesheet" href="./assets/css/image_card_slider.css">
@@ -179,6 +179,12 @@
             Qualitative results on <i>in-vivo</i> cardiac ultrasound data.
           </h4>
         </div>
+        <div class="has-text-justified">
+          <p>
+            Try dragging the slider to compare the input and dehazed images.
+          </p>
+          <br>
+        </div>
         <div class="columns is-centered">
           <div class="column">
             <div class="content">
@@ -197,7 +203,7 @@
                       <img src="./image_assets/ultrasound/vanilla_10.png" alt="" data-label="Input">
                     </div>
                     <div class="jx-image jx-right " style="width: 45.47%;"><img
-                        src="./image_assets/ultrasound/diffusion_10.png" alt="" data-label="Output">
+                        src="./image_assets/ultrasound/diffusion_10.png" alt="" data-label="Dehazed">
                     </div>
                   </div>
                 </div>
@@ -221,7 +227,7 @@
                         src="./image_assets/ultrasound/vanilla_40.png" alt="" data-label="Input">
                     </div>
                     <div class="jx-image jx-right " style="width: 45.47%;"><img
-                        src="./image_assets/ultrasound/diffusion_40.png" alt="" data-label="Output">
+                        src="./image_assets/ultrasound/diffusion_40.png" alt="" data-label="Dehazed">
                     </div>
                   </div>
                 </div>
@@ -239,7 +245,7 @@
         <div class="columns is-centered">
           <div class="column">
             <div class="content">
-              <img src="./image_assets/ultrasound/dehazing_diffusion_animation.gif" alt="Comparison" style="width: 100%;">
+              <img class="clipped-image" src="./image_assets/ultrasound/dehazing_diffusion_animation.gif" alt="Comparison" style="width: 100%; --clip-amount: 10%;">
             </div>
           </div>
         </div>
@@ -249,11 +255,25 @@
             Comparison with supervised network: NCSNv2
           </h4>
         </div>
+        <!-- Comparison Image -->
+        <div class="columns is-centered">
+          <div class="column">
+            <div class="content">
+                <img src="./image_assets/ultrasound/comparison.svg" alt="Comparison" style="width: 100%;">
+            </div>
+          </div>
+        </div>
+
+      <div class="content has-text-justified">
+        <h4>
+          Comparison on phantom data
+        </h4>
+      </div>
       <!-- Comparison Image -->
       <div class="columns is-centered">
         <div class="column">
           <div class="content">
-              <img src="./image_assets/ultrasound/comparison.png" alt="Comparison" style="width: 100%;">
+              <img src="./image_assets/ultrasound/comparison_phantom.svg" alt="Comparison" style="width: 100%;">
           </div>
         </div>
       </div>
@@ -269,20 +289,20 @@
         </p>
         <br>
       </div>
-    <!-- Comparison Image -->
-    <div class="columns is-centered">
-      <div class="column">
-        <div class="content">
-            <img src="./image_assets/ultrasound/dehazing_diffusion.png" alt="Comparison" style="width: 100%;">
+      <!-- Comparison Image -->
+      <div class="columns is-centered">
+        <div class="column">
+          <div class="content">
+              <img src="./image_assets/ultrasound/dehazing_diffusion.png" alt="Comparison" style="width: 100%;">
+          </div>
         </div>
       </div>
-    </div>
-    <div class="content has-text-justified">
-      <h4>
-        TBA
-      </h4>
-    </div>
-    <div class="has-text-justified">
+      <div class="content has-text-justified">
+        <h4>
+          TBA
+        </h4>
+      </div>
+      <div class="has-text-justified">
       <p>
         More examples TBA...
       </p>

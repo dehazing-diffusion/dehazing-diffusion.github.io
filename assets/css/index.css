@@ -192,3 +192,12 @@ hr {
   height: 2px;
   background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(0, 0, 0, 0.35), rgba(255, 255, 255, 0.9));
 }
+
+.clipped-image {
+  --clip-amount: 10%; /* default value */
+  clip-path: inset(var(--clip-amount) 0 var(--clip-amount) 0);
+  object-fit: cover;
+  margin: calc(-1 * var(--clip-amount) / 2) 0 calc(-1 * var(--clip-amount) / 2) 0;
+  padding: 0;
+}
+
