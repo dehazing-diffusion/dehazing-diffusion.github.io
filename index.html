@@ -278,6 +278,61 @@
         </div>
       </div>
 
+      <ul class="nav nav-pills nav-justified" id="prompt-view-ul" style="width: 100%;margin-bottom: 0.5em;">
+        <li style="font-size: 0.9em;" class="active"><a href="javascript: void(0);" onclick="ChangePrompt(0);">Image</a>
+        </li>
+        <li style="font-size: 0.9em;" class=""><a href="javascript: void(0);" onclick="ChangePrompt(1);">Error</a>
+        </li>
+      </ul>
+      <ul class="nav nav-pills nav-justified" id="method-view-ul" style="width: 100%">
+        <li style="font-size: 0.9em;" class="active"><a href="javascript: void(0);" onclick="ChangeMethod(0);">
+            Groundtruth</a></li>
+        <li style="font-size: 0.9em;" class=""><a href="javascript: void(0);" onclick="ChangeMethod(1);">
+            Input </a></li>
+        <li style="font-size: 0.9em;" class=""><a href="javascript: void(0);" onclick="ChangeMethod(2);">
+            Ours</a></li>
+        <li style="font-size: 0.9em;" class=""><a href="javascript: void(0);" onclick="ChangeMethod(3);">
+            BM3D</a></li>
+        <li style="font-size: 0.9em;" class=""><a href="javascript: void(0);" onclick="ChangeMethod(4);">
+            NCSNv2</a></li>
+      </ul>
+      <br>
+
+      <div class="columns is-centered" id="div_image" style="display: true; background-color: #000000;">
+        <div class="column">
+          <div class="content has-text-centered">
+            <img src="./image_assets/ultrasound/phantom/image/gt_5.png" id="image1" style="width: 100%;">
+          </div>
+        </div>
+        <div class="column">
+          <div class="content has-text-centered">
+            <img src="./image_assets/ultrasound/phantom/image/gt_11.png" id="image2" style="width: 100%;">
+          </div>
+        </div>
+        <div class="column">
+          <div class="content has-text-centered">
+            <img src="./image_assets/ultrasound/phantom/image/gt_18.png" id="image3" style="width: 100%;">
+          </div>
+        </div>
+      </div>
+      <div class="columns is-centered" id="div_error" style="display: none; background-color: #000000;">
+        <div class="column">
+          <div class="content has-text-centered">
+            <img src="./image_assets/ultrasound/phantom/error/gt_5_error.png" id="error1" style="width: 100%;">
+          </div>
+        </div>
+        <div class="column">
+          <div class="content has-text-centered">
+            <img src="./image_assets/ultrasound/phantom/error/gt_11_error.png" id="error2" style="width: 100%;">
+          </div>
+        </div>
+        <div class="column">
+          <div class="content has-text-centered">
+            <img src="./image_assets/ultrasound/phantom/error/gt_18_error.png" id="error3" style="width: 100%;">
+          </div>
+        </div>
+      </div>
+
       <div class="content has-text-justified">
         <h4>
           Overview of the algorithm
@@ -297,12 +352,12 @@
           </div>
         </div>
       </div>
-      <div class="content has-text-justified">
-        <h4>
-          TBA
-        </h4>
-      </div>
-      <div class="has-text-justified">
+    <div class="content has-text-justified">
+      <h4>
+        TBA
+      </h4>
+    </div>
+    <div class="has-text-justified">
       <p>
         More examples TBA...
       </p>
@@ -374,6 +429,7 @@
     </div>
   </footer>
 
+  <script src="./assets/js/choose_buttons.js"></script>
   <script src="./assets/js/juxtapose.js"></script>
   <script src="./assets/js/popper.min.js"></script>
   <script src="./assets/js/jquery.min.js"></script>
